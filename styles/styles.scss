@@ -1,0 +1,175 @@
+@import './variables.scss';
+
+#greeting {
+  top-margin: 30px;
+  font-family: $oswald;
+  font-size: 4em;
+}
+
+span {
+  color: $secondary-color;
+}
+
+.application-view {
+  background: url('/images/sky-background-web.jpg') no-repeat center center fixed;
+  background-position: cover;
+  padding: 10px;
+}
+
+body {
+  margin: auto;
+  text-align: center;
+  font-family: $catamaran;
+}
+
+#location-request {
+  font-size: 16px;
+  font-weight: bold;
+  color: $location-info;
+}
+
+.weather-info {
+  display: flex;
+  justify-content: center;
+}
+
+.location-title {
+  color: $location-info;
+  font-family: $oswald;
+  font-size: 20px;
+}
+
+h1, h3, #location-input, #submit-button {
+  margin: 20px auto;
+}
+
+h1 {
+  font-size: 30px;
+  color: $primary-color;
+}
+
+#location-input {
+  margin: 10px;
+  padding: 2px 4px 1px 4px;
+  font-family: $catamaran;
+}
+
+#submit-button {
+  margin: 10px;
+  border: none;
+  padding: 4px 4px 2px 4px;
+  background-color: $secondary-color;
+  text-decoration: none;
+  font-family: $catamaran;
+  color: white;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#submit-button:hover {
+  background-color: $primary-color;
+}
+
+ul {
+  color: $primary-color;
+}
+
+li {
+  padding: 3px;
+  line-height: 20px;
+}
+
+.summary {
+  font-family: $oswald;
+}
+
+.sunny-high, .sunny-low, .cloudy-high, .cloudy-low, .windy-high, .windy-low, .thunderstorms-high, .thunderstorms-low, .rain-high, .rain-low, .snow-high, .snow-low {
+  padding: 10px;
+  border-bottom: solid #9d9d9d 1.5px;
+}
+
+.windy-icon, .thunderstorms-icon, .rain-icon, .snow-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.sunny-icon {
+  width: 45px;
+  height: 45px;
+}
+
+.cloudy-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.sunny-high {
+  color: $sunny-high;
+}
+
+.cloudy-high {
+  color: $cloudy-high;
+}
+
+.windy-high {
+  color: $windy-high;
+}
+
+.thunderstorms-high {
+  color: $thunderstorms-high;
+}
+
+.rain-high {
+  color: $rain-high;
+}
+
+.snow-high {
+  color: $snow-high;
+}
+
+.sunny-low {
+  color: $sunny-low;
+}
+
+.cloudy-low {
+  color: $cloudy-low;
+}
+
+.windy-low {
+  color: $windy-low;
+}
+
+.thunderstorms-low {
+  color: $thunderstorms-low;
+}
+
+.rain-low {
+  color: $rain-low;
+}
+
+.snow-low {
+  color: $snow-low;
+}
+
+@media (max-width: 860px) {
+  .weather-info {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+  #greeting {
+    top-margin: 30px;
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 440px) {
+  #greeting {
+    top-margin: 30px;
+    line-height: 20px;
+    font-size: 2em;
+  }
+}
